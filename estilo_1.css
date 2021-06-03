@@ -1,0 +1,327 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+main{
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: space-between;
+	justify-content: space-between;
+}
+/*----------------------------------targey con background-image-----------------------*/
+.padreTarget{
+	width: 200px;
+	height: 100px;
+	position: relative;
+	border: 2px solid black;
+	text-align: center;
+	background-image: url(clase_02.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.hijoEfecto{
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	position: absolute;
+	top:180px;
+	left: -100px;
+	background: #000000;
+	filter: contrast(250%);
+	opacity: 30%;
+	transition: all 500ms;
+}
+
+.padreTarget:hover .hijoEfecto{
+	transform: translate(80px, -250px);
+}
+
+.padreTarget h1{
+	font-family: arial;
+	font-weight: 900;
+	font-size: 1.8rem;
+	position: relative;
+	z-index: 10;
+	color: red;
+	transform: translateY(5px);
+	transition: all 300ms;
+}
+
+.padreTarget p{
+	color: red;
+	z-index: 1;
+	transform: translateY(5px);
+	transition: all 300ms;
+}
+
+.padreTarget a{
+	color: white;
+	text-decoration: none;
+	font-weight: 900;
+	opacity: 0;
+	transition: all 300ms;
+	position: relative;
+	z-index: 20;
+}
+
+.padreTarget:hover h1{
+	transform: translateY(0);
+	color: white;
+}
+
+.padreTarget:hover p{
+	transform: translateY(0);	
+	color: white;
+}
+
+.padreTarget:hover a{
+	opacity: 100%;
+	color: yellow;
+}
+
+/*-----------------------------------target con icono y texto escondido-----------------------------------*/
+
+.padreTarget1{
+	width: 200px;
+	height: 100px;
+	position: relative;
+	border: 2px solid black;
+	text-align: center;
+	background-color: blue;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.hijoEfecto1{
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	position: absolute;
+	top:180px;
+	left: -100px;
+	background: #000000;
+	opacity: 30%;
+	transition: all 1s;
+}
+
+.padreTarget1:hover .hijoEfecto1{
+	transform: translate(80px, -250px);
+}
+
+.icon{
+	font-weight: 900;
+	font-size: 2rem;
+	position: relative;
+	color: #ffffff;
+	transition: all 1s;
+	margin-top: -5px;
+}
+.padreTarget1 i{
+	display: block;
+	
+}
+
+.padreTarget1 h1{
+	font-family: arial;
+	font-weight: 900;
+	font-size: 1.8rem;
+	position: relative;
+	z-index: 10;
+	color: red;
+	transform: translateY(5px);
+	transition: all 500ms;
+	opacity: 0%;
+}
+
+.padreTarget1 p{
+	color: red;
+	z-index: 1;
+	transform: translateY(5px);
+	transition: all 500ms;
+	opacity: 0%;
+}
+
+.padreTarget1 a{
+	color: white;
+	text-decoration: none;
+	font-weight: 900;
+	opacity: 0;
+	transition: all 500ms;
+	position: relative;
+	z-index: 20;
+	opacity: 0%;
+}
+
+.padreTarget1:hover i{
+	display: none;
+}
+
+.padreTarget1:hover h1{
+	transform: translateY(0);
+	color: white;
+	opacity: 100%;
+}
+
+.padreTarget1:hover p{
+	transform: translateY(0);	
+	color: white;
+	opacity: 100%;
+}
+
+.padreTarget1:hover a{
+	opacity: 100%;
+	color: yellow;
+	opacity: 100%;
+}
+
+/*-----------------------------------------target solo con efecto---------------------------------------------*/
+
+
+.padreTarget2{
+	width: 200px;
+	height: 100px;
+	position: relative;
+
+	border: 2px solid black;
+	text-align: center;
+	background-color: blue;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.hijoEfecto2{
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	position: absolute;
+	top:180px;
+	left: -100px;
+	background-color: yellow;
+	opacity: 30%;
+	transition: all 500ms;
+}
+
+.padreTarget2:hover .hijoEfecto2{
+	transform: translate(80px, -250px);
+}
+
+.padreTarget2 h1{
+	font-family: arial;
+	font-weight: 900;
+	font-size: 1.8rem;
+	position: relative;
+	z-index: 10;
+	color: red;
+	transform: translateY(5px);
+	transition: all 300ms;
+}
+
+.padreTarget2 p{
+	color: red;
+	z-index: 1;
+	transform: translateY(5px);
+	transition: all 300ms;
+}
+
+.padreTarget2 a{
+	color: white;
+	text-decoration: none;
+	font-weight: 900;
+	opacity: 0;
+	transition: all 300ms;
+	position: relative;
+	z-index: 20;
+}
+
+.padreTarget2:hover h1{
+	transform: translateY(0);
+	color: white;
+}
+
+.padreTarget2:hover p{
+	transform: translateY(0);	
+	color: white;
+}
+
+.padreTarget2:hover a{
+	opacity: 100%;
+	color: yellow;
+}
+/*------------------------------------target con hover con otro background-color-------------------------------------------*/
+
+.padreTarget3{
+	width: 200px;
+	height: 100px;
+	position: relative;
+
+	border: 2px solid black;
+	text-align: center;
+	background-color: blue;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.hijoEfecto3{
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	position: absolute;
+	top:180px;
+	left: -100px;
+	background-color: red;
+	opacity: 50%;
+	transition: all 500ms;
+
+}
+
+.padreTarget3:hover .hijoEfecto3{
+	transform: translate(80px, -250px);
+}
+
+.padreTarget3 h1{
+	font-family: arial;
+	font-weight: 900;
+	font-size: 1.8rem;
+	position: relative;
+	z-index: 10;
+	color: red;
+	transform: translateY(5px);
+	transition: all 300ms;
+}
+
+.padreTarget3 p{
+	color: red;
+	z-index: 1;
+	transform: translateY(5px);
+	transition: all 300ms;
+}
+
+.padreTarget3 a{
+	color: white;
+	text-decoration: none;
+	font-weight: 900;
+	opacity: 0;
+	transition: all 300ms;
+	position: relative;
+	z-index: 20;
+}
+
+.padreTarget3:hover h1{
+	transform: translateY(0);
+	color: white;
+}
+
+.padreTarget3:hover p{
+	transform: translateY(0);	
+	color: white;
+}
+
+.padreTarget3:hover a{
+	opacity: 100%;
+	color: yellow;
+}
